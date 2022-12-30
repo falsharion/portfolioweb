@@ -83,6 +83,7 @@ export default function Home() {
                   className='rounded-lg object-cover'
                   width={'50%'}
                   height={"50%"}
+                  alt = "me"
                   layout={"responsive"}
                   style={{
                     maxWidth: "100%",
@@ -105,6 +106,7 @@ export default function Home() {
                 src={html}
                 width={100}
                 height={100}
+                alt = "me"
                 className="inline"
                 style={{
                   maxWidth: "100%",
@@ -120,6 +122,7 @@ export default function Home() {
                 src={css}
                 width={100}
                 height={100}
+                alt = "me"
                 className="inline"
                 style={{
                   maxWidth: "100%",
@@ -133,6 +136,7 @@ export default function Home() {
               <Image
                 src={jslogo}
                 width={100}
+                alt = "me"
                 height={100}
                 className="inline"
                 style={{
@@ -148,6 +152,7 @@ export default function Home() {
                 src={reactlogo}
                 width={100}
                 height={100}
+                alt = "me"
                 className="inline"
                 style={{
                   maxWidth: "100%",
@@ -161,6 +166,7 @@ export default function Home() {
               <Image
                 src={boots}
                 width={100}
+                alt = "me"
                 height={100}
                 className="inline"
                 style={{
@@ -175,6 +181,7 @@ export default function Home() {
               <Image
                 src={tailwindlogo}
                 width={100}
+                alt = "me"
                 height={100}
                 className="inline"
                 style={{
@@ -189,6 +196,7 @@ export default function Home() {
               <Image
                 src={git}
                 width={100}
+                alt = "me"
                 height={100}
                 className="inline"
                 style={{
@@ -203,6 +211,7 @@ export default function Home() {
               <Image
                 src={Uiux}
                 width={100}
+                alt = "me"
                 height={100}
                 className="inline dark:bg-cyan-200 rounded"
                 style={{
@@ -232,6 +241,7 @@ export default function Home() {
                 src={zana}
                 className='rounded-lg object-cover'
                 width={'100%'}
+                alt = "me"
                 height={"100%"}
                 layout={"responsive"}
                 style={{
@@ -246,6 +256,7 @@ export default function Home() {
                 src={weatherapp}
                 className='rounded-lg object-cover'
                 width={'100%'}
+                alt = "me"
                 height={"100%"}
                 layout={"responsive"}
                 style={{
@@ -260,6 +271,7 @@ export default function Home() {
                 src={metaverse}
                 className='rounded-lg object-cover'
                 width={'100%'}
+                alt = "me"
                 height={"100%"}
                 layout={"responsive"}
                 style={{
