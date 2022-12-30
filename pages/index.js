@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { BsFillMoonStarsFill } from "react-icons/bs"
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
-import sharon from '../public/sharr.png'
+import sharon from '../public/sharrs.png'
 import aboutme from '../public/aboutme.png'
 import css from '../public/css.png'
 import html from '../public/html.png'
@@ -57,7 +57,9 @@ export default function Home() {
               alt = "me"
               sizes="100vw"
               style={{
-                objectFit: "cover"
+                objectFit: "cover",
+                position: "absolute",
+                bottom: "180px"
               }} />
           </div>
         </section>
