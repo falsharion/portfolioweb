@@ -54,6 +54,7 @@ export default function Home() {
             <Image
               src={sharon}
               fill
+              alt = "me"
               sizes="100vw"
               style={{
                 objectFit: "cover"
