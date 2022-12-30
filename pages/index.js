@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from "react-icons/bs"
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import sharon from '../public/sharr.png'
 import aboutme from '../public/aboutme.png'
 import css from '../public/css.png'
@@ -51,7 +51,13 @@ export default function Home() {
             <a href="https://github.com/falsharion" target="_blank"><AiFillGithub className='hover:text-cyan-400 hover:font-medium active:text-blue-900' /></a>
           </div>
           <div className='relative my-10 mx-auto bg-gradient-to-b from-cyan-500 rounded-full overflow-hidden w-80 h-80 md:h-96 md:w-96'>
-            <Image src={sharon} layout="fill" objectFit="cover" />
+            <Image
+              src={sharon}
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover"
+              }} />
           </div>
         </section>
         {/* end of hero section */}
@@ -72,7 +78,16 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <Image src={aboutme} className='rounded-lg object-cover' width={'50%'} height={"50%"} layout={"responsive"} />
+                <Image
+                  src={aboutme}
+                  className='rounded-lg object-cover'
+                  width={'50%'}
+                  height={"50%"}
+                  layout={"responsive"}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </div>
             </div>
           </div>
@@ -86,50 +101,114 @@ export default function Home() {
           </h3>
           <div className='lg:grid gap-3 grid-cols-2'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300/20 flex-1'>
-              <Image src={html} width={100} height={100} className="inline" />
+              <Image
+                src={html}
+                width={100}
+                height={100}
+                className="inline"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h3 className='text-lg text-cyan-500 font-medium pt-8 pb-2'>HTML</h3>
               <div className="w-full bg-gray-200 rounded-full">
                 <div className="bg-cyan-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{ width: `98%` }}> 98%</div>
               </div>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300/20 flex-1'>
-              <Image src={css} width={100} height={100} className="inline" />
+              <Image
+                src={css}
+                width={100}
+                height={100}
+                className="inline"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h3 className='text-lg text-cyan-500  font-medium pt-8 pb-2'>CSS</h3>
               <div className="w-full bg-gray-200 rounded-full">
                 <div className="bg-cyan-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{ width: `90%` }}> 90%</div>
               </div></div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300/20 flex-1'>
-              <Image src={jslogo} width={100} height={100} className="inline" />
+              <Image
+                src={jslogo}
+                width={100}
+                height={100}
+                className="inline"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h3 className='text-lg text-cyan-500 font-medium pt-8 pb-2'>JAVASCRIPT</h3>
               <div className="w-full bg-gray-200 rounded-full">
                 <div className="bg-cyan-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{ width: `80%` }}> 80%</div>
               </div></div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300/20 flex-1'>
-              <Image src={reactlogo} width={100} height={100} className="inline" />
+              <Image
+                src={reactlogo}
+                width={100}
+                height={100}
+                className="inline"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h3 className='text-lg text-cyan-500 font-medium pt-8 pb-2'>REACT</h3>
               <div className="w-full bg-gray-200 rounded-full">
                 <div className="bg-cyan-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{ width: `69%` }}> 69%</div>
               </div></div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300/20 flex-1'>
-              <Image src={boots} width={100} height={100} className="inline" />
+              <Image
+                src={boots}
+                width={100}
+                height={100}
+                className="inline"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h3 className='text-lg text-cyan-500 font-medium pt-8 pb-2'>BOOTSTRAP</h3>
               <div className="w-full bg-gray-200 rounded-full">
                 <div className="bg-cyan-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{ width: `78%` }}> 78%</div>
               </div></div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300/20 flex-1'>
-              <Image src={tailwindlogo} width={100} height={100} className="inline" />
+              <Image
+                src={tailwindlogo}
+                width={100}
+                height={100}
+                className="inline"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h3 className='text-lg text-cyan-500  font-medium pt-8 pb-2'>TAILWINDCSS</h3>
               <div className="w-full bg-gray-200 rounded-full">
                 <div className="bg-cyan-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{ width: `87%` }}> 87%</div>
               </div></div>
               <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300/20 flex-1'>
-              <Image src={git} width={100} height={100} className="inline" />
+              <Image
+                src={git}
+                width={100}
+                height={100}
+                className="inline"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h3 className='text-lg text-cyan-500  font-medium pt-8 pb-2'>GIT</h3>
               <div className="w-full bg-gray-200 rounded-full">
                 <div className="bg-cyan-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{ width: `92%` }}> 92%</div>
               </div></div>
               <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300/20 flex-1'>
-              <Image src={Uiux} width={100} height={100} className="inline dark:bg-cyan-200 rounded" />
+              <Image
+                src={Uiux}
+                width={100}
+                height={100}
+                className="inline dark:bg-cyan-200 rounded"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h3 className='text-lg text-cyan-500  font-medium pt-8 pb-2'>UI/UX</h3>
               <div className="w-full bg-gray-200 rounded-full">
                 <div className="bg-cyan-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-l-full" style={{ width: `75%` }}> 75%</div>
@@ -149,17 +228,44 @@ export default function Home() {
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
-              <Image src={zana} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout={"responsive"} />
+              <Image
+                src={zana}
+                className='rounded-lg object-cover'
+                width={'100%'}
+                height={"100%"}
+                layout={"responsive"}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h4 className='text-cyan-500 dark:text-slate-100'>ZANA FASHION STORE</h4>
               <a href='https://zanafashionstore.netlify.app/' target="_blank" className='dark:text-slate-100/70'>Live Demo</a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image src={weatherapp} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout={"responsive"} />
+              <Image
+                src={weatherapp}
+                className='rounded-lg object-cover'
+                width={'100%'}
+                height={"100%"}
+                layout={"responsive"}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h4 className='text-cyan-500 dark:text-slate-100'>WEATHER APP</h4>
               <a href='https://falsharion.github.io/weather-app/'  target="_blank" className='dark:text-slate-100/70'>Live Demo</a>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image src={metaverse} className='rounded-lg object-cover' width={'100%'} height={"100%"} layout={"responsive"} />
+              <Image
+                src={metaverse}
+                className='rounded-lg object-cover'
+                width={'100%'}
+                height={"100%"}
+                layout={"responsive"}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <h4 className='text-cyan-500 dark:text-slate-100'>METAVERSE</h4>
               <a href='https://falsharion.github.io/tailwindPractice/' target="_blank" className='dark:text-slate-100/70'>Live Demo</a>
             </div>
